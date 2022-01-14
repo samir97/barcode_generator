@@ -15,7 +15,6 @@ import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.platform.PlatformView
 
-
 class BarcodeView(context: Context, messenger: BinaryMessenger, id: Int, args: Map<String, Any>) : PlatformView, MethodCallHandler {
     private val imageView: ImageView = ImageView(context)
     private val methodChannel: MethodChannel = MethodChannel(messenger, "ihx.flutter.io/barcode_view_$id")
